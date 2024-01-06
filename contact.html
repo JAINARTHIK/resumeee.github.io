@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Contact</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://images.wallpaperscraft.com/image/single/silhouettes_moon_night_143593_1920x1080.jpg);
+            color: #fff;
+        }
+
+        header {
+            
+            color: #130b0b;
+            padding: 1em;
+            text-align: center;
+        }
+       
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 20px;
+            
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            color:aqua;
+        }
+
+        p {
+            line-height: 1.6;
+            
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+           
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #555;
+            border-radius: 4px;
+           
+            
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ARTHIK JAIN</h1>
+        <p>Contact Me @ 7483277454 </p>
+      <a href="https://jainarthik.github.io/my-resume/">https://jainarthik.github.io/resumee.github.io/</a>
+       
+    </header>
+
+    <section>
+        <h2>Get in Touch</h2>
+        <p>Feel free to reach out to me using the form below.</p>
+
+        <form action="" id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+        
+    </section>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault(); 
+
+           
+            alert('Message submitted successfully!');
+        });
+    </script>
+   
+</body>
+
+
+</html>
